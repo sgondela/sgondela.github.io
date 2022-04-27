@@ -313,38 +313,6 @@ section#hello h2 {
     font-family: var(--font-sans);
 }
 
-/*
-#skills .skills-languages-inner {
-    display: grid;
-    grid-template: auto / repeat(8, 1fr);
-    gap: 0.625rem;
-    justify-items: center;
-    align-items: start;
-    width: 100%;
-}
-
-#skills .skill { 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.skill .icon {
-    justify-content: center;
-}
-
-.skill figcaption p {
-    visibility: hidden;
-    font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
-    margin-top: .625rem;
-}
-
-.skill:hover figcaption p,
-.skill:focus figcaption p {
-    visibility: visible;
-} */
-
 /* Projects */
 
 #projects h2 {
