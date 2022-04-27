@@ -1,0 +1,439 @@
+/* Load fonts */
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: bold;
+    font-weight: 700;
+    src: url('../fonts/Manrope-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: bold;
+    font-weight: 800;
+    src: url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mulish';
+    font-style: bold;
+    font-weight: 600;
+    src: url('../fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
+}
+
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --N900: #091E42;
+    --N800: #172B4D;
+    --N700: #253858;
+    --N600: #344563;
+    --N500: #42526E;
+    --N400: #505F79;
+    --N300: #5E6C84;
+    --N200: #6B778C;
+    --N100: #7A869A;
+    --N90: #8993A4;
+    --N80: #97A0AF;
+    --N70: #A5ADBA;
+    --N60: #B3BAC5;
+    --N50: #C1C7D0;
+    --N40: #DFE1E6;
+    --N30: #EBECF0;
+    --N20: #F4F5F7;
+    --N10: #FAFBFC;
+    --N0: #FFFFFF;
+    --font-sans: 'Manrope', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --fz-xxs: 0.75rem;
+    --fz-xs: 0.8125rem;
+    --fz-sm: 0.875rem;
+    --fz-md: 16px;
+    --fz-lg: 1.125rem;
+    --fz-xl: 1.25rem;
+    --fz-xxl: 1.375rem;
+    --fz-logo: 1.625rem;
+    --fz-heading: 2rem;
+    --border-radius: 0.25rem;
+    --nav-height: 6.25rem;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+html {
+    font-family: var(--font-sans);
+    font-size: var(--fz-md);
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    font-size: var(--fz-md);
+    line-height: 1.6;
+    background-color: var(--N10);
+    letter-spacing: 0.001rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100rem;
+    min-height: 100vh;
+    padding: 0 9.375rem;
+}
+
+section {
+    margin: 0 auto;
+    padding: 6.25rem 0;
+    max-width: 62.5rem;
+    display: flex;              /* not sure */
+    flex-direction: column;     /* may want */
+    justify-content: center;    /* to do ea */
+    min-height: 100vh;          /* section */
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 0.625rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.06rem;
+    color: var(--N300);
+}
+
+p {
+    color: var(--N500);
+    margin: 0 0 0.625rem 0;
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--N300);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    padding: 0 3.125rem;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: var(--N20);
+    border-bottom: 1px solid var(--N30);
+}
+
+#logo a {
+    font-size: var(--fz-logo);
+    color: var(--N300);
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a {
+    font-family: var(--font-mono);
+    margin: 0 0.3125rem;
+    position: relative; /* why? */
+    font-size: var(--fz-xs);
+    color: var(--N300);
+}
+
+nav ul a:hover,
+nav ul a:focus,
+#logo a:hover,
+#logo a:focus {
+    color: var(--N800);
+}
+
+nav ul a li {
+    padding: 0.625rem;
+}
+
+/* Hello */
+
+#hello h1 {
+    margin: 0 0 1.875rem 0.25rem;
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+section#hello h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(2rem, 6vw, 4.5em);
+    font-weight: 800;
+    margin: 0.3125rem 0 0 0;
+    display: block;
+    color: var(--N200);
+}
+
+#hello h2.hello {
+    color: var(--N800);
+    margin: 0;
+}
+
+#hello p {
+    margin: 1.625rem 0 0 0;
+    max-width: 33.75rem;
+}
+
+/* About */
+
+#about h2 {
+    overflow: hidden;
+    margin: 0.625rem 0 2.5rem 0;
+    font-size: clamp(1.625rem, 4vw, var(--fz-heading));
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#about h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.0625rem;
+    margin-left: 1.25rem;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: var(--N50);
+}
+
+#about .about-inner {
+    display: grid;
+    grid-template: auto / 3fr 2fr;
+    gap: 3.125rem;
+    grid-template-areas: 'about-text about-img';
+}
+
+#about .about-inner .about-text {
+    grid-area: about-text;
+}
+
+#about .about-inner .about-img {
+    grid-area: about-img;
+    max-width: 18.75rem;
+    position: relative;
+    display: block;
+}
+
+#about img.me {
+    border-radius: var(--border-radius);
+    filter: grayscale(1);
+    width: 100%;
+}
+
+/* Skills */
+
+#skills h2 {
+    overflow: hidden;
+    margin: 0.625rem 0 2.5rem 0;
+    font-size: clamp(1.625rem, 4vw, var(--fz-heading));
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#skills h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.0625rem;
+    margin-left: 1.25rem;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: var(--N50);
+}
+
+#skills h3 {
+    font-size: var(--fz-xxl);
+    font-weight: 800;
+    margin: 0 0 2rem 0;
+}
+
+#skills .skills-container {
+    display: grid;
+    grid-template: auto / auto auto;
+    gap: 2.5rem;
+    align-content: start;
+    justify-content: start;
+}
+
+#skills .lang-tools {
+    display: grid;
+    grid-template: auto / repeat(2, 9rem);
+    gap: 0 0.625rem;
+}
+
+.lang-tools li,
+.focus li {
+    position: relative;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    list-style: none;
+    padding-left: 1.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.lang-tools li::before,
+.focus li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    font-family: var(--font-sans);
+}
+
+/*
+#skills .skills-languages-inner {
+    display: grid;
+    grid-template: auto / repeat(8, 1fr);
+    gap: 0.625rem;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+}
+
+#skills .skill { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.skill .icon {
+    justify-content: center;
+}
+
+.skill figcaption p {
+    visibility: hidden;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    margin-top: .625rem;
+}
+
+.skill:hover figcaption p,
+.skill:focus figcaption p {
+    visibility: visible;
+} */
+
+/* Projects */
+
+#projects h2 {
+    overflow: hidden;
+    margin: 0.625rem 0 2.5rem 0;
+    font-size: clamp(1.625rem, 4vw, var(--fz-heading));
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#projects h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.0625rem;
+    margin-left: 1.25rem;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: var(--N50);
+}
+
+#projects .project-grid {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    margin-top: 3.125rem;
+}
+
+.icon.external:hover,
+.icon.external:focus {
+    color: var(--N800);
+}
+
+/* Contact */
+
+#contact h2 {
+    overflow: hidden;
+    margin: 0.625rem 0 2.5rem 0;
+    font-size: clamp(1.625rem, 4vw, var(--fz-heading));
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#contact h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.0625rem;
+    margin-left: 1.25rem;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    background-color: var(--N50);
+}
+
+/* Footer */
+
+/* Media Queries */
+
+@media only screen and (max-width: 67.5rem) {
+    main {
+        padding: 0 6.25rem;
+    }
+    
+    header {
+        padding: 0 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    main {
+        padding: 0 3.125rem;
+    }
+
+    header {
+        padding: 0 1.5625rem;
+    }
+}
+
+@media only screen and (max-width: 43.75rem) {
+    #skills .skills-container {
+        display: grid;
+        grid-template: auto / auto;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 25rem) {
+    #skills .lang-tools {
+        display: grid;
+        grid-template: auto / 9rem;
+}
