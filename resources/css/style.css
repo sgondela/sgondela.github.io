@@ -391,6 +391,10 @@ nav ul a li {
     background-color: var(--N20);
 }
 
+.project.no-third-col {
+    display: none;
+}
+
 .project-upper {
     display: block;
 }
@@ -652,6 +656,12 @@ footer.main p {
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 76.8125rem) {
+    .project.no-third-col {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 75rem) {
     #archive table td.title {
