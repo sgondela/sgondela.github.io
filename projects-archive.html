@@ -5,39 +5,155 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!--  <link href="./resources/css/reset.css" rel="stylesheet" />
-        <link href="./resources/css/style.css" rel="stylesheet" /> -->
+        <link href="./resources/css/reset.css" rel="stylesheet" />
+        <link href="./resources/css/style.css" rel="stylesheet" />
         <title>Sarah Gondela | Projects Archive</title>
     </head>
 
     <body>
         <header class="main">
-            <!-- Paste header from other page when done -->
+            <p id="logo"><a href="./index.html">_S</a></p>
+            <nav>
+                <ul role="presentation">
+                    <a href="./index.html#about"><li>About</li></a>
+                    <a href="./index.html#skills"><li>Skills</li></a>
+                    <a href="./index.html#projects"><li>Projects</li></a>
+                    <a href="./index.html#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <h1>Projects</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Built with</th>
-                        <th scope="col">Link</th>
-                    </tr>
-                </thead>
-                <tbody id="myProjects">
-                </tbody>
-            </table>
+            <section id="archive">
+                <h1>Projects</h1>
+                <h2>A list of things I've worked on</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="year">Year</th>
+                            <th scope="col" class="title">Title</th>
+                            <th scope="col" class="description hide-on-mobile">Description</th>
+                            <th scope="col" class="built-with hide-on-mobile">Built with</th>
+                            <th scope="col" class="link">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Personal Portfolio Website</td>
+                            <td class="description hide-on-mobile">Responsive website to showcase coding projects with limited use of ARIA roles and attributes.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · JavaScript · Git</td>
+                            <td class="link"><a href="./index.html" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Website Design System</td>
+                            <td class="description hide-on-mobile">Webpage presenting a demo style guide using relative measurements in CSS.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/website-design-system" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Tea Cozy</td>
+                            <td class="description hide-on-mobile">Basic responsive webpage for fictitious local shop based on design spec.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/tea-cozy" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Fotomatic</td>
+                            <td class="description hide-on-mobile">Debugged responsive webpage for a fictitious product based on design spec.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/fotomatic" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Excursion</td>
+                            <td class="description hide-on-mobile">Static landing page for a fictitious mobile app based on design spec.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/excursion" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Dasmoto's Arts and Crafts</td>
+                            <td class="description hide-on-mobile">Static webpage for a fictitious arts and crafts store based on design spec.</td>
+                            <td class="built-with hide-on-mobile">HTML · CSS · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/dasmotos-arts-and-crafts" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Mixed Messages</td>
+                            <td class="description hide-on-mobile">JavaScript-based message generator program that produces a randomized Batman joke.</td>
+                            <td class="built-with hide-on-mobile">JavaScript · Node.js · Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/mixed-messages" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td class="year">2022</td>
+                            <td class="title">Git Practice</td>
+                            <td class="description hide-on-mobile">Learn basics of git and set up first remote repository in Github.</td>
+                            <td class="built-with hide-on-mobile">Git</td>
+                            <td class="link"><a href="https://github.com/sgondela/git_practice" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" class="icon external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M 18 13 v 6 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 8 a 2 2 0 0 1 2 -2 h 6" />
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
 
     <footer class="main">
-        <!-- Paste footer from other page when done -->
-    </footer>
+        <!-- Footer -->
+        <footer class="main">
+            <p id="copyright">Copyright &copy; 2022 Sarah Gondela. All rights reserved.</p>
+        </footer>
 
-    <!-- Load JavaScript -->
-    <script src="./resources/js/script.js"></script>
-    </body>
+        <!-- Load JavaScript -->
+        <script src="./references/js/script.js"></script>
 
 </html>
