@@ -646,6 +646,7 @@ button:focus {
 
 footer {
     min-width: 18.75rem;
+    padding: 1rem;
 }
 
 footer.main p {
