@@ -352,6 +352,10 @@ nav ul a li {
 
 /* Projects */
 
+#projects {
+    display: grid;
+}
+
 #projects h2 {
     overflow: hidden;
     margin: 0.625rem 0 2.5rem 0;
@@ -389,10 +393,6 @@ nav ul a li {
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
     background-color: var(--N20);
-}
-
-.project.no-third-col {
-    display: none;
 }
 
 .project-upper {
@@ -656,12 +656,6 @@ footer.main p {
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 76.8125rem) {
-    .project.no-third-col {
-        display: block;
-    }
-}
 
 @media only screen and (max-width: 75rem) {
     #archive table td.title {
